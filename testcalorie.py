@@ -1,5 +1,5 @@
 import streamlit as st
-
+st.title("CalorieCounting")
 def hitung_bmr(jenis_kelamin, berat_kg, tinggi_cm, usia_tahun, tingkat_aktivitas):
     """Menghitung Basal Metabolic Rate (BMR) dan kebutuhan kalori harian.
 
