@@ -1,6 +1,16 @@
 import streamlit as st
+
+st.set_page_config(page_title="CalorieCounting",layout="centered")
+
+#Title
 st.title("CalorieCounting")
-def hitung_bmr(jenis_kelamin, berat_kg, tinggi_cm, usia_tahun, tingkat_aktivitas):
+
+#Description
+st.subheader("CalorieCounting adalah metode yang dapat digunakan untuk mengelola berat badan dan kesehatan secara keseluruhan dengan memantau jumlah kalori yang dikonsumsi dari makanan dan minuman")
+
+#Sidebar for input
+with st.sidebar:
+    def hitung_bmr(jenis_kelamin, berat_kg, tinggi_cm, usia_tahun, tingkat_aktivitas):
     """Menghitung Basal Metabolic Rate (BMR) dan kebutuhan kalori harian.
 
     Args:
